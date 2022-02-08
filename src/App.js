@@ -3,7 +3,7 @@ import Validation from './pages/Validation';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Validation />
     </div>
   );
