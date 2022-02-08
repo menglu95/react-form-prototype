@@ -1,27 +1,43 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import '../scss/normalForm.scss';
+import { Form } from 'react-bootstrap';
+import { CaretDownFill } from 'react-bootstrap-icons';
 
 const NormalForm = () => {
   return (
     <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+      <Form.Group className="mb-3" controlId="LoremInput">
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          Lorem ipsum
         </Form.Text>
+        <Form.Control type="text" />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+      <Form.Group className="mb-3" controlId="subjectInput">
+        <div className="message-label">
+          <Form.Text className="text-muted">
+            Subject
+          </Form.Text>
+          <Form.Text>
+            Insert System Variable
+            <CaretDownFill className="down-icon" />
+          </Form.Text>
+        </div>
+        <Form.Control type="text" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+
+      <Form.Group className="mb-3" controlId="messageTextarea">
+        <div className="message-label">
+          <Form.Text className="text-muted">
+            Message
+          </Form.Text>
+          <Form.Text>
+            Insert System Variable
+            <CaretDownFill className="down-icon" />
+          </Form.Text>
+        </div>
+        <Form.Control as="textarea" rows={10} />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
     </Form>
   )
 }
