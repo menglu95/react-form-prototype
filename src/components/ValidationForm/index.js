@@ -1,10 +1,11 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container, Form } from 'react-bootstrap';
 import '../../scss/validationForm.scss';
+import LocationService from './LocationService';
 
 const ValidationForm = () => {
   return (
-    <Container>
+    <Container className="border p-3">
       <Row>
         <Col md={4}>
           <div className="progress-btn-groups">
@@ -15,7 +16,11 @@ const ValidationForm = () => {
             <button>Activation Progress</button>
           </div>
         </Col>
-        <Col md={8}>container</Col>
+        <Col md={8}>
+          <Form>
+            <LocationService />
+          </Form>
+        </Col>
       </Row>
     </Container>
   )

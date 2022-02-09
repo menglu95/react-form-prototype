@@ -6,8 +6,8 @@ import ValidationForm from '../components/ValidationForm';
 const Validate = () => {
   return (
     <div>
-      <NormalForm />
-      <Thumbnail />
+      {/* <NormalForm />
+      <Thumbnail /> */}
       <ValidationForm />
     </div>
   )
