@@ -1,0 +1,10 @@
+.message-label {
+  display: flex;
+  justify-content: space-between;
+  .form-text {
+    color: black;
+  }
+  .down-icon {
+    margin-left: 5px;
+  }
+}

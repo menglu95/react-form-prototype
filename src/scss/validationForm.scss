@@ -1,0 +1,20 @@
+.container {
+  .progress-btn-groups {
+    & > button {
+      &:first-child {
+        margin-top: 12px;
+      }
+      &:focus {
+        background-color: #86f586;
+      }
+      width: 200px;
+      padding: 24px 12px;
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px dashed black;
+  }
+}
