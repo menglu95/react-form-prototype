@@ -23,7 +23,7 @@ const LocationService = () => {
         {countries.map((country, idx) => <option key={idx}>{country}</option>)}
       </Form.Select>
       <Form.Text>Services Required</Form.Text>
-      <div className="check-list">
+      <div className="ps-3 mb-5">
         {checkList.map(item => <Form.Check type="checkbox" key={item} label={item} />)}
       </div>
       <Button variant="primary" className="px-5 me-5">Next &gt;&gt;</Button>
