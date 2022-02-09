@@ -9,6 +9,7 @@ export const locationServiceSlice = createSlice({
   reducers: {
     locationUpdate: (state, action) => {
       state.location = action.payload;
+      console.log('country', state.location);
     },
     servicesUpdate: (state, action) => {
       const index = state.services.indexOf(action.payload);
